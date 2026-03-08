@@ -1,21 +1,11 @@
 package org.example;
 
-import com.google.gson.Gson;
-
 public class Principal {
-    public static void main(String[] args) {
 
-        Gson gson = new Gson();
+    public static void main(String[] args) throws Exception {
 
-        String json = "{\"nombre\":\"Daniel\",\"edad\":25}";
+        Menu menu = new Menu();
+        menu.iniciar();
 
-        Persona persona = gson.fromJson(json, Persona.class);
-
-        System.out.println(persona.nombre);
     }
-}
-
-class Persona {
-    String nombre;
-    int edad;
 }
