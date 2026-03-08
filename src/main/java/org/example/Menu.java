@@ -11,7 +11,7 @@ public class Menu {
 
         int opcion = 0;
 
-        while (opcion != 7) {
+        while (opcion != 8) {
 
             System.out.println("""
 *************************************************
@@ -23,7 +23,8 @@ Sea bienvenido/a al Conversor de Moneda
 4) Real brasileno ==> Dolar
 5) Dolar ==> Peso colombiano
 6) Peso colombiano ==> Dolar
-7) Salir
+7) Ver historial
+8) Salir
 
 Elija una opcion valida:
 *************************************************
@@ -32,6 +33,11 @@ Elija una opcion valida:
             opcion = scanner.nextInt();
 
             if (opcion == 7) {
+                Historial.mostrar();
+                continue;
+            }
+
+            if (opcion == 8) {
                 System.out.println("Programa finalizado.");
                 break;
             }

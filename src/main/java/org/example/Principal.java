@@ -6,6 +6,6 @@ public class Principal {
 
         Menu menu = new Menu();
         menu.iniciar();
-
+        Historial.mostrar();
     }
 }
